@@ -1,0 +1,62 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin:0;
+  background: rgb(6, 156, 18);
+  color: white;
+}
+
+.App {
+  height: 350px;
+  width: 450px;
+  display: grid;
+  margin-top: 28vh;
+  justify-self: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(31, 31, 31);
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+#break-container {
+  width: 200px;
+  grid-column-start: 0;
+  grid-column-end: 1;
+}
+
+#session-container {
+  width: 200px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#timer-container {
+  
+  grid-column: span 2;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  color: white;
+  border: none;
+  background: none;
+}
+
+#reset::before {
+  width: 32px;
+  height: 32px;
+  color: black;
+  font-size: rem;
+  background: white;
+  border-radius: 50px;
+}
